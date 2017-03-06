@@ -1,0 +1,28 @@
+<template bindable="router, entered">
+    <div class="navbar-fixed">
+        <md-navbar>
+            <div class="media--links--mobile">
+                <a href="https://github.com/bmb0205" target="_blank">
+                    <img class="github" src="../../images/github.png">
+                </a>
+                <a href="https://www.linkedin.com/in/brandon-burciaga-1b449067" target="__blank">
+                    <img class="linkedin" src="../../images/linked-in.png">
+                </a>
+            </div>
+            <a href="#/home" class="brand-logo" id="logo"><span>BRANDON BURCIAGA</span></a>
+            <i md-sidenav-collapse="ref.bind: sideNavRight;" class="material-icons mobile-menu" md-waves>menu</i>
+            <ul class="hide-on-med-and-down right nav--item--color--change">
+                <li md-waves repeat.for="row of router.navigation" class="navbar--list--item ${row.isActive ? 'active' : ''}">
+                    <a href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
+        </md-navbar>
+    </div>
+    <md-sidenav view-model.ref="sideNavRight" md-edge="right">
+        <ul class="right nav--item--color--change">
+            <li md-waves repeat.for="row of router.navigation" class="navbar--list--item ${row.isActive ? 'active' : ''}">
+                <a href.bind="row.href">${row.title}</a>
+            </li>
+        </ul>
+    </md-sidenav>
+</template>

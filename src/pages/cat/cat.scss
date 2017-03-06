@@ -1,0 +1,94 @@
+.cat {
+    overflow-y: auto;
+    height: 103%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -95px;
+    padding-top: 100px;
+    .cat--content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        animation: fadeIn 500ms ease-in;
+        overflow-y: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat--cat-content {
+        color: #fff;
+        font-size: 24px;
+        height: 100%;
+        padding-right: 3px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat--cat-pictures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cat--card {
+        margin: 35px 15px;
+    }
+    .cat--headline {
+        text-align: center;
+        color: #d9d9d9;
+        font-size: 26px;
+        margin: 20px auto;
+    }
+}
+
+
+/*.cat {
+    min-height: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    margin-top: -95px;
+    padding-top: 100px;
+    .cat--content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        animation: fadeIn 500ms ease-in;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat--content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-around;
+        animation: fadeIn 500ms ease-in-out;
+    }
+    .cat--card {
+        margin: 35px 15px;
+    }
+    .cat--headline {
+        text-align: center;
+        color: #d9d9d9;
+        font-size: 26px;
+        margin: 20px auto;
+    }
+}*/

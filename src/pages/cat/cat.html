@@ -1,0 +1,22 @@
+<template>
+    <require from="./cat.css"></require>
+    <div class="cat" ref="cat">
+        <div class="cat--content-container">
+            <div class="cat--cat-content">
+                <!--<header>-->
+                    <h1>Ella</h1>
+                    <hr class="content-divider">
+                    <p class="cat--headline"><i>"My cat is also the greatest JUST LOOK AT HER FACE" ~ Also Me</i></p>
+                    <hr class="content-divider">
+                <!--</header>-->
+                <div class="cat--cat-pictures">
+                    <div repeat.for="picture of ellaPics" class="cat--card">
+                        
+                        <img md-box="caption: ${picture.caption.text};" src="${picture.images.standard_resolution.url}" width="640">
+                        <!--<p>${picture.caption.text}</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

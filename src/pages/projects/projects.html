@@ -1,0 +1,26 @@
+<template>
+    <require from="./projects.css"></require>
+    <require from="../../resources/elements/card/card"></require>
+    <div class="home">
+        <div class="home--content-container">
+            <div class="home--home-content">
+                <h1>Projects</h1>
+                <hr class="content-divider">
+                <p class="home--headline"><i>"Some funny quote about theory being good, but tangible results being better..."</i></p>
+                <hr class="content-divider">
+                <div class="projects--project-paragraph">
+                    <div repeat.for="project of projects" class="projects--card">
+                        <md-card md-image="${project.imgRoute}" md-title="${project.name}" md-reveal="true">
+                            <div>
+                                ${project.description}
+                            </div>
+                            <div slot="reveal-text">
+                                ${project.longDescription}
+                            </div>
+                        </md-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

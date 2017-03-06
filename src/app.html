@@ -1,0 +1,30 @@
+<template>
+  <require from="./nav/nav-bar.html"></require>
+  <require from="./styles/main.css"></require>
+  <require from="./styles/nav.css"></require>
+  <require from="./pages/home/home.css"></require>
+
+  <nav-bar router.bind="router" class="nav" ref="navElement"></nav-bar>
+
+  <!--<div class="wrapper" ref="wrapper"></div>-->
+
+  <router-view class="router--view"></router-view>
+
+  <div class="welcome--modal" ref="welcomeWrapper" show.bind="!entered">
+    <h2><span class="last--name">BRANDON BURCIAGA</span></h2>
+    <p class="message">Software Developer<br>Charlotte, NC</p>
+    <button md-button="disabled.bind: disabled;" click.trigger="enterApplication()">ENTER</button>
+  </div>
+
+
+  <div class="media--links" show.bind="entered">
+    <a show.bind="entered" href="https://github.com/bmb0205" target="_blank">
+      <img class="github" src="../../images/github.png">
+    </a>
+    <a show.bind="entered" href="https://www.linkedin.com/in/brandon-burciaga-1b449067" target="__blank">
+      <img class="linkedin" src="../../images/linked-in.png">
+    </a>
+  </div>
+
+
+</template>
