@@ -10,11 +10,11 @@
                 <hr class="content-divider">
                 <div class="projects--project-paragraph">
                     <div repeat.for="project of projects" class="projects--card">
-                        <md-card md-image="${project.imgRoute}" md-title="${project.name}" md-reveal="true">
-                            <div>
+                        <md-card class="t--card" md-image="${project.imgRoute}" md-title="${project.name}" md-reveal="true">
+                            <div class="t--card--inner">
                                 ${project.description}
                             </div>
-                            <div slot="reveal-text">
+                            <div class="t--card--inner" slot="reveal-text">
                                 ${project.longDescription}
                             </div>
                         </md-card>

@@ -13,7 +13,7 @@
             <i md-sidenav-collapse="ref.bind: sideNavRight;" class="material-icons mobile-menu" md-waves>menu</i>
             <ul class="hide-on-med-and-down right nav--item--color--change">
                 <li md-waves repeat.for="row of router.navigation" class="navbar--list--item ${row.isActive ? 'active' : ''}">
-                    <a href.bind="row.href">${row.title}</a>
+                    <a href.bind="row.href" id.bind="row.href">${row.title}</a>
                 </li>
             </ul>
         </md-navbar>
